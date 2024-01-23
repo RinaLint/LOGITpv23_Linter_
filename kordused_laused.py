@@ -1,7 +1,179 @@
 from random import *
 from datetime import *
 
-#3 l
+#24
+
+
+
+
+#23
+
+
+
+
+#22
+
+
+
+
+#21
+
+
+#20
+
+
+
+
+
+
+
+#19
+
+
+
+
+#18
+
+
+
+
+#17
+
+
+
+
+#16
+
+
+
+
+#15
+katsed=0
+while True:
+    vastus=input("Osta elevant ära! Kirjuta 'elevant': ")
+    katsed+=1
+
+    if vastus.lower()== 'elevant':
+        print(f"Õige! Ostsid elevanti ära {katsed} katsega.")
+        break
+    else:
+        print("Vale vastus. Proovi uusti.")
+
+
+
+
+#14
+
+
+
+
+
+#13
+print("arv ruut kuup")
+print()
+
+for i in range(1, 11):
+    ruut=i**2
+    kuup=i**3
+    print(f"{i:2} {ruut:2} {kuup:3}")
+
+
+
+
+
+#12
+
+
+
+
+
+#11
+number=randint(1,100)
+katsed=3
+while katsed>0:
+    külaline=int(input("Arva ära arv vahemikus 1 kuni 100: "))
+    if külaline==number:
+        print("Palju õnne, arvasite numbri ära! ")
+        break
+    else:
+        katsed -=1
+        print(f"Vale! Teil on jäänud {katsed} katset. ")
+        if katsed==0:
+            print(f"Vabandust, olete andnud endast parima. Varjatud number oli {number}. ")
+            veelkord=input("Kas sa tahad arvata? ").lower
+            if veelkord.lower()=="ei":
+                break
+            else:
+                katsed=3
+
+
+
+
+#10
+for arv in range(1, 101):
+    if arv %5==0:
+        print(arv)
+
+
+
+
+#9
+korrutamine=["5"]
+arv=["1", "2", "3", "4", "5", "6","7","8","9","10"]
+for i in range(10):
+    tulemus=int(arv[i])*5
+    print(f"{arv[i]}*5={tulemus}")
+
+
+korrutamine=5
+for i in range(1,11):
+    tulemus=(i)*5
+    print(f"{i}*5={tulemus}")
+
+
+
+#8
+paaris=0
+paaritu=0
+for i in range(1, 101):
+    if i%2==0:
+        print(f"{i}-paaris")
+        paaris+=1
+    else:
+        print(f"{i}-paaritu")
+        paaritu+=1
+
+print(f"Paarisarvude arv: {paaris}")
+print(f"Paaritute arvude arv: {paaritu}")
+
+
+#7
+from random import*
+
+for i in range(5):
+    number=randint(0,9)
+    print(number, end="")
+print()
+
+
+
+#6
+
+
+
+
+
+#5
+
+
+
+
+#4
+
+
+
+
+#3
 k=0
 while True:
     k+=1
@@ -24,7 +196,7 @@ while True:
 
 
 
-#2 l
+#2
 summa=0
 for i in range(10):
     arv=float(input("Sisesta arv: "))
