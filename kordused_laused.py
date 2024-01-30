@@ -1,6 +1,8 @@
 from random import *
 from datetime import *
 
+
+
 #24
 
 
@@ -47,6 +49,8 @@ from datetime import *
 
 
 
+
+
 #15
 katsed=0
 while True:
@@ -62,13 +66,17 @@ while True:
 
 
 
-#14
+#14 Korrutustabel
+for j in range(1,11):
+    for i in range(1, 11):
+        print(f"{j*i:4}",end=" ")
+    print()
+    
 
 
 
 
-
-#13
+#13 Ruutude ja kuupide tabel
 print("arv ruut kuup")
 print()
 
@@ -81,13 +89,27 @@ for i in range(1, 11):
 
 
 
-#12
+#12 Pank
+algsumma=float(input("Mis summa paneme panka?"))
+alg=lõppsumma=algsumma
+intress=randint(1,10)
+print(f"Paned panka summa, mis võrdub {algsumma}. Intress on {intress}")
+aastad=int(input("Mitmeks aastaks?"))
+print("Aasta Algsumma Intress Aasta_lõpuks")
+for i in range(1,aastad+1):
+    intsumma=(algsumma*intress)/100
+    lõppsumma=algsumma+intsumma
+    print(f"{i} {algsumma} {intsumma} {lõppsumma}")
+    algsumma=lõppsumma
+print(f"Summa kokku: {lõppsumma} Eur")
+print(f"Kasum: {lõppsumma-alg} Eur")
 
 
 
 
 
-#11
+
+#11 Arvamismäng
 number=randint(1,100)
 katsed=3
 while katsed>0:
@@ -109,7 +131,7 @@ while katsed>0:
 
 
 
-#10
+#10 Viisikud
 for arv in range(1, 101):
     if arv %5==0:
         print(arv)
@@ -117,7 +139,7 @@ for arv in range(1, 101):
 
 
 
-#9
+#9 Pisike korrutustabel
 korrutamine=["5"]
 arv=["1", "2", "3", "4", "5", "6","7","8","9","10"]
 for i in range(10):
@@ -132,7 +154,7 @@ for i in range(1,11):
 
 
 
-#8
+#8 Paaris ja paaritu
 paaris=0
 paaritu=0
 for i in range(1, 101):
@@ -147,7 +169,7 @@ print(f"Paarisarvude arv: {paaris}")
 print(f"Paaritute arvude arv: {paaritu}")
 
 
-#7
+#7 Loto
 from random import*
 
 for i in range(5):
@@ -157,7 +179,7 @@ print()
 
 
 
-#6
+#6 Tärnid
 
 
 
