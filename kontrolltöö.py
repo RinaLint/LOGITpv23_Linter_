@@ -51,10 +51,10 @@ while katsed>0:
 
 
 #2
-L=int(input("Sisestage number L: ")) #Andmepäring
+L=random
 summ=0 #muutuja 0
-for i in range(L+1):
-    summ+=i #loendage numbreid 0-st muutujani L
+print(f"Numbriseeria summa vahemikus 0 kuni {L} kaasa arvatud:")
+summ+=i #loendage numbreid 0-st muutujani L
 print("Numbrite summa 0 kuni L on: ", summ) #järeldus
 
 
