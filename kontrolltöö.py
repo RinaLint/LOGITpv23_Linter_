@@ -16,9 +16,13 @@ print("korrutis:", korrutis) #määra väljund
 
 
 #4
-n=int(input("Sisestage number")) #numbrite päring
-vastastikune_number=int(str(n)[::-1]) #pöörake numbrit
-print(f"Обратное число: {vastastikune_number}") #järeldus
+n=int(input("Sisestage number:  "))
+vastastikune_arv=0
+while n>0:
+    ülejäänud=n%10
+    vastastikune_arv=(vastastikune_arv*10)+ülejaanud
+    n=n/10
+    print("Vastastikune arv:", vastastikune_arv)
 
 
 
