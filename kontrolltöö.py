@@ -2,7 +2,7 @@
 
 
 #5
-n=int(input("sisesta number")) #numbrite päring
+n=int(input("Sisesta number")) #numbrite päring
 summa=0 #muutuv summa
 korrutis=1 #muutuv toode
 while n>0:
@@ -14,8 +14,9 @@ print("summa:", summa) #väljamakse summa
 print("korrutis:", korrutis) #määra väljund
 
 
+
 #4
-n=int(input("Введите число:")) #numbrite päring
+n=int(input("Sisestage number")) #numbrite päring
 vastastikune_number=int(str(n)[::-1]) #pöörake numbrit
 print(f"Обратное число: {vastastikune_number}") #järeldus
 
@@ -51,12 +52,11 @@ while katsed>0:
 
 
 #2
-L=random
-summ=0 #muutuja 0
-print(f"Numbriseeria summa vahemikus 0 kuni {L} kaasa arvatud:")
-summ+=i #loendage numbreid 0-st muutujani L
-print("Numbrite summa 0 kuni L on: ", summ) #järeldus
-
+L=int(input("Sisestage number L: "))
+summ=0
+for i in range(L+1):
+    summ += i
+print("Numnbrite summa 0 kuni L on: ", summ)
 
 
 #1 Jaanes
