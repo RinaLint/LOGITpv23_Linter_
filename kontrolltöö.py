@@ -2,12 +2,22 @@
 
 
 #5
-
-
-
+n=int(input("sisesta number")) #numbrite päring
+summa=0 #muutuv summa
+korrutis=1 #muutuv toode
+while n>0:
+    praegune_number=n%10
+    summa+=praegune_number  #kokkuvõte
+    korrutis*=praegune_number #korrutada
+    n=n//10
+print("summa:", summa) #väljamakse summa
+print("korrutis:", korrutis) #määra väljund
 
 
 #4
+n=int(input("Введите число:")) #numbrite päring
+vastastikune_number=int(str(n)[::-1]) #pöörake numbrit
+print(f"Обратное число: {vastastikune_number}") #järeldus
 
 
 
@@ -15,7 +25,7 @@
 
 #3
 #Juhusliku arvu importimine
-from random importrandom, 
+from random import *
 number=randint(1,100)
 katsed=10
 #Anname kasutajale 10 katset arvu ära arvata
@@ -30,7 +40,7 @@ while katsed>0:
         if katsed==0:
             print(f"Vabandust, olete andnud endast parima. Varjatud number oli {number}. ")
 #Kui kasutaja ei soovi otsustada, siis tsükkel katkeb. Kui ta tahab, katsed taastatakse 
-            veelkord=input("Kas sa tahad arvata? ").lower
+            veelkord=input("Kas sa tahad arvata? ").lower()
             if veelkord.lower()=="ei":
                 break
             else:
@@ -40,12 +50,12 @@ while katsed>0:
 
 
 
-
 #2
-L=random
-result=sum(range(L+1))
-print(f"Numbriseeria summa vahemikus 0 kuni {L} kaasa arvatud:")
-
+L=int(input("Sisestage number L: ")) #Andmepäring
+summ=0 #muutuja 0
+for i in range(L+1):
+    summ+=i #loendage numbreid 0-st muutujani L
+print("Numbrite summa 0 kuni L on: ", summ) #järeldus
 
 
 

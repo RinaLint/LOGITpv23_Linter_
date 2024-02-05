@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f9e395a4-0d8b-4e26-9c56-d2ee6f12516d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>kontrolltöö.py</StartupFile>
+    <StartupFile>list.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +24,7 @@
     <Compile Include="LOGITpv23_Linter.py" />
     <Compile Include="kordused_laused.py" />
     <Compile Include="kontrolltöö.py" />
+    <Compile Include="list.py" />
     <Compile Include="vigade_otsing2.py" />
     <Compile Include="ruutvõrrandit.py" />
   </ItemGroup>
