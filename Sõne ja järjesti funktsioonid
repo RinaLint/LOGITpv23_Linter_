@@ -1,0 +1,65 @@
+spisok=[] #pustoy spisok
+numbers=[1,2,3,4,5]
+abc=["Abc","B","C"]
+slovo="Programmeerimine"
+slovo_list=list(slovo)
+print(slovo)
+print(slovo_list)
+while True:
+    print("1-Добавить букву в список\n2-Склеить списки\n3-Добавить букву на i -позицию\n4-Рассмотреть пример кода isspace()\n5-Удалить букву\n6-Рассмотреть пример кода s.swapcase()\n7-Рассмотреть пример кода find()\n8-Рассмотреть пример кода a.istitle()\n9-Рассмотреть пример кода a.title()\n10-Рассмотреть пример кода isdigit()\n11-Рассмотреть пример кода a.upper()")
+    valik=int(input())
+
+    if valik==1:
+            a=input("Введи букву")
+            slovo_list.append(a)
+            print(f"Добавили {a} новый список, ",slovo_list)
+    elif valik==2:
+            slovo_list.extend(abc)
+            print(slovo_list)
+    elif valik==3:
+            a=input("Введи букву, которую хочешь добавить ")
+            i=int(input("Введи номер позиции, куда хочешь добавить букву"))
+            slovo_list.insert(i-1,a)
+    elif valik==4:
+        example_code="""
+        #Пример использования метода isspace()
+        s="   " #Пример строки, состоящей только из пробкльных символов
+        result=s.isspace()
+        print(result) #Vivedet True, если строка состоит только из пробельных символов """
+        print("Пример использования метода isspace():")
+        s=input("Что Вы хотите ввести?")
+        result=s.isspace()
+        print(example_code)
+        print(result)
+    elif valik==5:
+        a=input("Введи букву, которую хочешь удалить")
+        n=slovo_list.count(a)
+        if n>0:
+            for i in range(n):
+                slovo_list.remove(a)
+    elif valik==6:
+        #Переводит символы нижнего регистра в верхний, а верхнего – в нижний S.swapcase()
+        print("Пример использования метода s.swapcase():")
+        s=input("Что Вы хотите ввести?")
+        result=s.swapcase()
+        print(result)
+    elif valik==7:
+        # Поиск подстроки в строке. Возвращает номер первого вхождения или -1 S.find(str, [start],[end])
+        a=input("Пример использования find()")
+        s="On the other hand, you have different fingers."
+    elif==8:
+        a=input("Введи слово или букву с заглавной буквы\n")
+        t=a.istitle()
+        print(a)
+    elif valik==9:
+        a=input("Введите слово или набор букв с маленькой и большой буквы\n")
+        l=a.title()
+        print(l)
+    elif valik==10:
+        print("isdigit() проверяет состоит ли строка из цифр")
+        a=slovo.isdigit()
+        print(a)
+     elif valik==11:
+        a=input("Введите слово или букву\n")
+        r=a.upper()
+        print(r)
