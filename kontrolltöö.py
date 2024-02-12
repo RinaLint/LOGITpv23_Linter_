@@ -16,13 +16,13 @@ print("korrutis:", korrutis) #määra väljund
 
 
 #4
-n=int(input("Sisestage number:  "))
-vastastikune_arv=0
-while n>0:
-    ülejäänud=n%10
-    vastastikune_arv=(vastastikune_arv*10)+ülejaanud
-    n=n/10
-    print("Vastastikune arv:", vastastikune_arv)
+n=int(input("Sisestage number:  ")) #Küsime kasutajalt numbrit
+vastastikune_arv=0 #Initsialiseerige pöördarvu muutuja
+while n>0: 
+    ülejäänud=n%10 # Ülejäänud osa saamine arvu 10-ga jagamisel
+    vastastikune_arv=(vastastikune_arv*10)+ülejäänud #Korrutage pöördarvu 10-ga ja lisage ülejäänud osa
+    n=n/10 #Järgmise numbri juurde liikumiseks jagage algne arv 10-ga
+    print("Vastastikune arv:", vastastikune_arv) #Väljutage praegune pöördarv
 
 
 
@@ -56,11 +56,11 @@ while katsed>0:
 
 
 #2
-L=int(input("Sisestage number L: "))
-summ=0
-for i in range(L+1):
-    summ += i
-print("Numnbrite summa 0 kuni L on: ", summ)
+L=int(input("Sisestage number L: ")) #Küsime kasutajalt numbrit L
+summ=0 #Initsialiseerige muutuja summa jaoks
+for i in range(L+1): #Tsükkel, mis läheb 0-st L-ni (kaasa arvatud)
+    summ += i #Lisage summale praegune arv
+print("Numnbrite summa 0 kuni L on: ", summ) #Väljutage arvude summa 0-st L-ni
 
 
 #1 Jaanes
