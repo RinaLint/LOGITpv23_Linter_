@@ -63,3 +63,9 @@ while True:
         a=input("Введите слово или букву\n")
         r=a.upper()
         print(r)
+    elif valik==12:
+        a=input("Пример использования S.startswith(str)")
+       
+
+    elif valik==13:
+        a=input("Пример использования S.endswith(str)")
