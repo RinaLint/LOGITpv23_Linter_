@@ -47,7 +47,7 @@ while True:
         # Поиск подстроки в строке. Возвращает номер первого вхождения или -1 S.find(str, [start],[end])
         a=input("Пример использования find()")
         s="On the other hand, you have different fingers."
-    elif==8:
+    elif valik==8:
         a=input("Введи слово или букву с заглавной буквы\n")
         t=a.istitle()
         print(a)
@@ -59,7 +59,7 @@ while True:
         print("isdigit() проверяет состоит ли строка из цифр")
         a=slovo.isdigit()
         print(a)
-     elif valik==11:
+    elif valik==11:
         a=input("Введите слово или букву\n")
         r=a.upper()
         print(r)
